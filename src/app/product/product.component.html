@@ -1,8 +1,8 @@
 <p>product works!</p>
 
-<input type="text" [(ngModel)]="priceMax">
+<input class="form-control" type="text" [(ngModel)]="priceMax">
 
-<table border="1">
+<table class="table" border="1">
     <tr>
         <th>Id</th>
         <th>Title</th>
@@ -18,8 +18,11 @@
             <td> {{i.price}}</td>
             <td> {{i.quantity}}</td>
             <td>{{i.like}}</td>
-            <td><button (click)="increment(p)">Like</button></td>
-            <td><button (click)="buy(p)" [disabled]="i.quantity==0">buy</button></td>
+            <td>
+                <button class="btn btn-success" (click)=" increment(p) ">Like</button></td>
+            <td><button class="btn btn-primary " (click)="buy(p) " [disabled]="i.quantity==0 ">buy</button></td>
+            <td><button class="btn btn-info" [routerLink]="['/product',i.id]">detail</button></td>
+
         </ng-container>
     </tr>
 </table>
