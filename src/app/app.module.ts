@@ -12,7 +12,7 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { ApartementComponent } from './apartement/apartement.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { AddProductComponent } from './add-product/add-product.component';
-
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,8 @@ import { AddProductComponent } from './add-product/add-product.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
