@@ -2,17 +2,10 @@
   "products": [
     {
       "id": 1,
-      "title": "product",
-      "price": 100,
+      "title": "iphone12",
       "quantity": 500,
+      "price": 100,
       "like": 5
-    },
-    {
-      "id": "8",
-      "title": "tetstt",
-      "quantity": "50",
-      "price": "5",
-      "like": "5"
     }
   ]
 }

@@ -22,6 +22,8 @@
                 <button class="btn btn-success" (click)=" increment(p) ">Like</button></td>
             <td><button class="btn btn-primary " (click)="buy(p) " [disabled]="i.quantity==0 ">buy</button></td>
             <td><button class="btn btn-info" [routerLink]="['/product',i.id]">detail</button></td>
+            <td><button class="btn btn-info" [routerLink]="['/updateP',i.id]">Update</button></td>
+            <td><button class="btn btn-info" (click)="supp(i.id)">delete</button></td>
 
         </ng-container>
     </tr>

@@ -27,4 +27,9 @@ export class ProductComponent {
   buy(p:number){
     this.listProduct[p].quantity--;
   }
+  supp(id:number){
+    this.consP.deleteProduct(id).subscribe(
+      ()=>this.ngOnInit()
+    )
+  }
 }

@@ -8,6 +8,7 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { ApartementComponent } from './apartement/apartement.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'product/:id',component:DetailProductComponent},
   {path:'appartement/:id',component:ApartementComponent},
+  {path:'updateP/:id',component:UpdateProductComponent},
   //route not found
   {path:'**', component:NotFoundComponent},
 ];
